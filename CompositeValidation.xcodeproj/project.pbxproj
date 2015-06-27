@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		150BC23F1B3CCE320069FAFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC23E1B3CCE320069FAFE /* AppDelegate.swift */; };
-		150BC2411B3CCE320069FAFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC2401B3CCE320069FAFE /* ViewController.swift */; };
 		150BC2441B3CCE320069FAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2421B3CCE320069FAFE /* Main.storyboard */; };
 		150BC2461B3CCE320069FAFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2451B3CCE320069FAFE /* Images.xcassets */; };
 		150BC2491B3CCE320069FAFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2471B3CCE320069FAFE /* LaunchScreen.xib */; };
 		150BC2551B3CCE320069FAFE /* CompositeValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC2541B3CCE320069FAFE /* CompositeValidationTests.swift */; };
+		150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */; };
+		15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		150BC2391B3CCE320069FAFE /* CompositeValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositeValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150BC23D1B3CCE320069FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150BC23E1B3CCE320069FAFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		150BC2401B3CCE320069FAFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		150BC2431B3CCE320069FAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		150BC2451B3CCE320069FAFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		150BC2481B3CCE320069FAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		150BC24E1B3CCE320069FAFE /* CompositeValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		150BC2531B3CCE320069FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150BC2541B3CCE320069FAFE /* CompositeValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidationTests.swift; sourceTree = "<group>"; };
+		150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				150BC23E1B3CCE320069FAFE /* AppDelegate.swift */,
-				150BC2401B3CCE320069FAFE /* ViewController.swift */,
+				15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */,
+				150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */,
 				150BC2421B3CCE320069FAFE /* Main.storyboard */,
 				150BC2451B3CCE320069FAFE /* Images.xcassets */,
 				150BC2471B3CCE320069FAFE /* LaunchScreen.xib */,
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150BC2411B3CCE320069FAFE /* ViewController.swift in Sources */,
+				15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */,
 				150BC23F1B3CCE320069FAFE /* AppDelegate.swift in Sources */,
+				150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				150BC25A1B3CCE320069FAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		150BC25B1B3CCE320069FAFE /* Build configuration list for PBXNativeTarget "CompositeValidationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				150BC25D1B3CCE320069FAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
