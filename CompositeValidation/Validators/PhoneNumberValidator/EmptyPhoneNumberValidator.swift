@@ -2,15 +2,23 @@ import Foundation
 
 class EmptyPhoneNumberValidator : Validator {
     func validateValue(value: String?, error: NSErrorPointer?) -> Bool {
-        if let phoneNumber = value where phoneNumber.isEmpty {
-            if let error = error {
-                error.memory = emptyPhoneNumberError()
-            }
-
-            return false
+        if isPhoneNumberNotEmpty(value) {
+            return true
         }
         
-        return true
+        if let error = error {
+            error.memory = emptyPhoneNumberError()
+        }
+        
+        return false
+    }
+    
+    private func isPhoneNumberNotEmpty(phoneNumber: String?) -> Bool {
+        if let phoneNumber = phoneNumber {
+            return !phoneNumber.isEmpty
+        }
+        
+        return false
     }
     
     private func emptyPhoneNumberError() -> NSError {
