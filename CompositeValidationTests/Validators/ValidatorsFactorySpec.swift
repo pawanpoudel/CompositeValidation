@@ -1,6 +1,5 @@
 import Quick
 import Nimble
-import Foundation
 
 class ValidatorsFactorySpec: QuickSpec {
     
@@ -20,49 +19,29 @@ class ValidatorsFactorySpec: QuickSpec {
         }
         
         describe("registrationValidator") {
-            var registrationValidator: RegistrationValidator!
-            
-            beforeEach {
-                registrationValidator = factory.registrationValidator()
-            }
-            
             it("is not nil") {
+                let registrationValidator = factory.registrationValidator()
                 expect(registrationValidator).toNot(beNil())
             }
         }
         
         describe("settingsValidator") {
-            var settingsValidator: SettingsValidator!
-            
-            beforeEach {
-                settingsValidator = factory.settingsValidator()
-            }
-            
             it("is not nil") {
+                let settingsValidator = factory.settingsValidator()
                 expect(settingsValidator).toNot(beNil())
             }
         }
         
         describe("phoneNumberValidator") {
-            var phoneNumberValidator: CompositeValidator!
-            
-            beforeEach {
-                phoneNumberValidator = factory.phoneNumberValidator()
-            }
-            
             it("is not nil") {
+                let phoneNumberValidator = factory.phoneNumberValidator()
                 expect(phoneNumberValidator).toNot(beNil())
             }
         }
         
         describe("emailValidator") {
-            var emailValidator: CompositeValidator!
-            
-            beforeEach {
-                emailValidator = factory.emailValidator()
-            }
-            
             it("is not nil") {
+                let emailValidator = factory.emailValidator()
                 expect(emailValidator).toNot(beNil())
             }
         }
