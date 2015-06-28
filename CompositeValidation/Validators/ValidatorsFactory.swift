@@ -7,6 +7,10 @@ class ValidatorsFactory {
             passwordValidator: PasswordLengthValidator())
     }
     
+    func settingsValidator() -> SettingsValidator {
+        return SettingsValidator(nicknameValidator: EmptyNicknameValidator(), phoneNumberValidator: phoneNumberValidator())
+    }
+    
     func phoneNumberValidator() -> CompositeValidator {
         return CompositeValidator(validators: [EmptyPhoneNumberValidator(), PhoneNumberLengthValidator()])
     }

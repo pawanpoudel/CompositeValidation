@@ -31,6 +31,18 @@ class ValidatorsFactorySpec: QuickSpec {
             }
         }
         
+        describe("settingsValidator") {
+            var settingsValidator: SettingsValidator!
+            
+            beforeEach {
+                settingsValidator = factory.settingsValidator()
+            }
+            
+            it("is not nil") {
+                expect(settingsValidator).toNot(beNil())
+            }
+        }
+        
         describe("phoneNumberValidator") {
             var phoneNumberValidator: CompositeValidator!
             
