@@ -23,12 +23,16 @@ class EmptyEmailValidatorSpec: QuickSpec {
                 isEmailValid = validator.validateValue(email, error: &error)
             }
             
-            it("it is valid") {
-                expect(isEmailValid).to(beTrue())
+            it("it is invalid") {
+                expect(isEmailValid).to(beFalse())
             }
             
-            it("error should be nil") {
-                expect(error).to(beNil())
+            it("correct error domain is set") {
+                expect(error?.domain).to(equal(EmailValidatorErrorDomain))
+            }
+            
+            it("correct error code is set") {
+                expect(error?.code).to(equal(EmailValidatorErrorCode.EmptyEmail.rawValue))
             }
         }
         
@@ -55,6 +59,10 @@ class EmptyEmailValidatorSpec: QuickSpec {
             beforeEach {
                 email = "testemail@testdomain.com"
                 isEmailValid = validator.validateValue(email, error: &error)
+            }
+            
+            it("it is valid") {
+                expect(isEmailValid).to(beTrue())
             }
             
             it("error should be nil") {

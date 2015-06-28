@@ -2,13 +2,23 @@ import Foundation
 
 class EmptyEmailValidator : Validator {
     func validateValue(value: String?, error: NSErrorPointer?) -> Bool {
-        if let email = value where email.isEmpty {
-            if let error = error {
-                error.memory = emptyEmailError()
-            }
-            return false
+        if isEmailNotEmpty(value) {
+            return true
         }
-        return true
+        
+        if let error = error {
+            error.memory = emptyEmailError()
+        }
+        
+        return false
+    }
+    
+    private func isEmailNotEmpty(email: String?) -> Bool {
+        if let email = email {
+            return !email.isEmpty
+        }
+        
+        return false
     }
     
     private func emptyEmailError() -> NSError {

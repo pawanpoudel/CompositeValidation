@@ -23,12 +23,16 @@ class EmptyPhoneNumberValidatorSpec: QuickSpec {
                 isPhoneNumberValid = validator.validateValue(phoneNumber, error: &error)
             }
             
-            it("it is valid") {
-                expect(isPhoneNumberValid).to(beTrue())
+            it("it is invalid") {
+                expect(isPhoneNumberValid).to(beFalse())
             }
             
-            it("error should be nil") {
-                expect(error).to(beNil())
+            it("correct error domain is set") {
+                expect(error?.domain).to(equal(PhoneNumberValidatorErrorDomain))
+            }
+            
+            it("correct error code is set") {
+                expect(error?.code).to(equal(PhoneNumberValidatorErrorCode.EmptyPhoneNumber.rawValue))
             }
         }
         
@@ -55,6 +59,10 @@ class EmptyPhoneNumberValidatorSpec: QuickSpec {
             beforeEach {
                 phoneNumber = "testemail@testdomain.com"
                 isPhoneNumberValid = validator.validateValue(phoneNumber, error: &error)
+            }
+            
+            it("it is valid") {
+                expect(isPhoneNumberValid).to(beTrue())
             }
             
             it("error should be nil") {

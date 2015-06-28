@@ -22,15 +22,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Jonny Appleseed" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyE-hm-zme" userLabel="Nickname Text Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jonny Appleseed" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UyE-hm-zme" userLabel="Nickname Text Field">
                                 <rect key="frame" x="119" y="68" width="236" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="o0k-9F-kXB" id="c73-hq-t2n"/>
-                                </connections>
                             </textField>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9I-6X-RXK" userLabel="Nickname Separator">
                                 <rect key="frame" x="20" y="102" width="335" height="1"/>
@@ -42,15 +39,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(xxx) xxx-xxxx" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfY-la-E2d" userLabel="Phone Text Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(xxx) xxx-xxxx" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfY-la-E2d" userLabel="Phone Text Field">
                                 <rect key="frame" x="119" y="107" width="236" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="o0k-9F-kXB" id="Qhn-TV-cSA"/>
-                                </connections>
                             </textField>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcn-uL-RZM" userLabel="Phone Separator">
                                 <rect key="frame" x="20" y="141" width="335" height="1"/>
@@ -66,12 +60,19 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="o0k-9F-kXB" eventType="touchUpInside" id="mO1-De-9xk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="MlC-Nl-GDT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nicknameTextField" destination="UyE-hm-zme" id="NM4-hI-1uy"/>
+                        <outlet property="phoneNumberTextField" destination="mfY-la-E2d" id="gaF-ra-HMB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prz-ST-Uae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
