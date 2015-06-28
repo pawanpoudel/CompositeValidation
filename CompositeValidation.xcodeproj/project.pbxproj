@@ -31,6 +31,14 @@
 		15C41DAF1B405E3000633D61 /* PasswordValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */; };
 		15C41DB01B405F0E00633D61 /* PasswordLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */; };
 		15C41DB11B405F0E00633D61 /* PasswordValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */; };
+		15C41DB41B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */; };
+		15C41DB51B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */; };
+		15C41DBB1B40600100633D61 /* EmptyPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */; };
+		15C41DBD1B40600100633D61 /* PhoneNumberLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */; };
+		15C41DBF1B40602600633D61 /* PhoneNumberValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */; };
+		15C41DC01B40615B00633D61 /* EmptyPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */; };
+		15C41DC11B40615B00633D61 /* PhoneNumberLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */; };
+		15C41DC21B40615B00633D61 /* PhoneNumberValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */; };
 		15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */; };
 		A2729F25266787857F610733 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AA74392870D2E05D8D3BC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -67,6 +75,11 @@
 		15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordLengthValidator.swift; sourceTree = "<group>"; };
 		15C41DAC1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordLengthValidatorSpec.swift; path = ../../../../../Desktop/ValidatorsTests/PasswordLengthValidatorSpec.swift; sourceTree = "<group>"; };
 		15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorError.swift; sourceTree = "<group>"; };
+		15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPhoneNumberValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberLengthValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPhoneNumberValidator.swift; sourceTree = "<group>"; };
+		15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberLengthValidator.swift; sourceTree = "<group>"; };
+		15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidatorError.swift; sourceTree = "<group>"; };
 		15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		635850C327DB8E1B1CF73FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7D6AA74392870D2E05D8D3BC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +180,7 @@
 				15C41D8F1B3F773400633D61 /* CompositeValidator.swift */,
 				15C41D991B3F79E000633D61 /* EmailValidator */,
 				15C41DA61B405DF700633D61 /* PasswordValidator */,
+				15C41DB61B40600100633D61 /* PhoneNumberValidator */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -179,6 +193,8 @@
 				15C41D951B3F79D200633D61 /* EmailFormatValidatorSpec.swift */,
 				15C41D961B3F79D200633D61 /* EmptyEmailValidatorSpec.swift */,
 				15C41DAC1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift */,
+				15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */,
+				15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -200,6 +216,16 @@
 				15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */,
 			);
 			path = PasswordValidator;
+			sourceTree = "<group>";
+		};
+		15C41DB61B40600100633D61 /* PhoneNumberValidator */ = {
+			isa = PBXGroup;
+			children = (
+				15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */,
+				15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */,
+				15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */,
+			);
+			path = PhoneNumberValidator;
 			sourceTree = "<group>";
 		};
 		C3B9A2BF17DF90AE046D2B57 /* Pods */ = {
@@ -362,8 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C41DBB1B40600100633D61 /* EmptyPhoneNumberValidator.swift in Sources */,
 				15C41D901B3F773400633D61 /* CompositeValidator.swift in Sources */,
 				15C41D8B1B3F763A00633D61 /* Validator.swift in Sources */,
+				15C41DBF1B40602600633D61 /* PhoneNumberValidatorError.swift in Sources */,
 				15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */,
 				15C41DA21B3F7A0900633D61 /* EmailValidatorError.swift in Sources */,
 				15C41DAF1B405E3000633D61 /* PasswordValidatorError.swift in Sources */,
@@ -371,6 +399,7 @@
 				15C41DAB1B405DF700633D61 /* PasswordLengthValidator.swift in Sources */,
 				150BC23F1B3CCE320069FAFE /* AppDelegate.swift in Sources */,
 				15C41D9E1B3F79E000633D61 /* EmailFormatValidator.swift in Sources */,
+				15C41DBD1B40600100633D61 /* PhoneNumberLengthValidator.swift in Sources */,
 				150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,14 +409,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C41DAD1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift in Sources */,
+				15C41DB51B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift in Sources */,
 				15C41DB01B405F0E00633D61 /* PasswordLengthValidator.swift in Sources */,
+				15C41DB41B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift in Sources */,
 				15C41DB11B405F0E00633D61 /* PasswordValidatorError.swift in Sources */,
+				15C41DC21B40615B00633D61 /* PhoneNumberValidatorError.swift in Sources */,
 				15C41D971B3F79D200633D61 /* EmailFormatValidatorSpec.swift in Sources */,
 				15C41DA41B3F7B0A00633D61 /* EmptyEmailValidator.swift in Sources */,
 				15C41D941B3F778C00633D61 /* CompositeValidator.swift in Sources */,
+				15C41DC01B40615B00633D61 /* EmptyPhoneNumberValidator.swift in Sources */,
 				15C41D981B3F79D200633D61 /* EmptyEmailValidatorSpec.swift in Sources */,
 				15C41DA51B3F7B0E00633D61 /* EmailValidatorError.swift in Sources */,
 				15C41DA31B3F7B0700633D61 /* EmailFormatValidator.swift in Sources */,
+				15C41DC11B40615B00633D61 /* PhoneNumberLengthValidator.swift in Sources */,
 				15C41D8E1B3F772800633D61 /* CompositeValidatorSpec.swift in Sources */,
 				15C41D931B3F778900633D61 /* Validator.swift in Sources */,
 				15C41D921B3F776900633D61 /* FakeValidator.swift in Sources */,
