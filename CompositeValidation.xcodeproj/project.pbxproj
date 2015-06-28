@@ -12,6 +12,7 @@
 		150BC2461B3CCE320069FAFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2451B3CCE320069FAFE /* Images.xcassets */; };
 		150BC2491B3CCE320069FAFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2471B3CCE320069FAFE /* LaunchScreen.xib */; };
 		150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */; };
+		15C41D8B1B3F763A00633D61 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8A1B3F763A00633D61 /* Validator.swift */; };
 		15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */; };
 		A2729F25266787857F610733 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AA74392870D2E05D8D3BC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		150BC24E1B3CCE320069FAFE /* CompositeValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		150BC2531B3CCE320069FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		15C41D8A1B3F763A00633D61 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		635850C327DB8E1B1CF73FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7D6AA74392870D2E05D8D3BC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				150BC2421B3CCE320069FAFE /* Main.storyboard */,
 				150BC2451B3CCE320069FAFE /* Images.xcassets */,
 				150BC2471B3CCE320069FAFE /* LaunchScreen.xib */,
+				15C41D891B3F763A00633D61 /* Validators */,
 				150BC23C1B3CCE320069FAFE /* Supporting Files */,
 			);
 			path = CompositeValidation;
@@ -125,6 +128,14 @@
 				150BC2531B3CCE320069FAFE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15C41D891B3F763A00633D61 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				15C41D8A1B3F763A00633D61 /* Validator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		C3B9A2BF17DF90AE046D2B57 /* Pods */ = {
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C41D8B1B3F763A00633D61 /* Validator.swift in Sources */,
 				15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */,
 				150BC23F1B3CCE320069FAFE /* AppDelegate.swift in Sources */,
 				150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */,
