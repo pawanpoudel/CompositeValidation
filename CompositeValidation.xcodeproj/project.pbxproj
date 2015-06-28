@@ -11,9 +11,42 @@
 		150BC2441B3CCE320069FAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2421B3CCE320069FAFE /* Main.storyboard */; };
 		150BC2461B3CCE320069FAFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2451B3CCE320069FAFE /* Images.xcassets */; };
 		150BC2491B3CCE320069FAFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150BC2471B3CCE320069FAFE /* LaunchScreen.xib */; };
-		150BC2551B3CCE320069FAFE /* CompositeValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC2541B3CCE320069FAFE /* CompositeValidationTests.swift */; };
 		150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */; };
+		15C41D8B1B3F763A00633D61 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8A1B3F763A00633D61 /* Validator.swift */; };
+		15C41D8E1B3F772800633D61 /* CompositeValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8D1B3F772800633D61 /* CompositeValidatorSpec.swift */; };
+		15C41D901B3F773400633D61 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8F1B3F773400633D61 /* CompositeValidator.swift */; };
+		15C41D921B3F776900633D61 /* FakeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D911B3F776900633D61 /* FakeValidator.swift */; };
+		15C41D931B3F778900633D61 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8A1B3F763A00633D61 /* Validator.swift */; };
+		15C41D941B3F778C00633D61 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D8F1B3F773400633D61 /* CompositeValidator.swift */; };
+		15C41D971B3F79D200633D61 /* EmailFormatValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D951B3F79D200633D61 /* EmailFormatValidatorSpec.swift */; };
+		15C41D981B3F79D200633D61 /* EmptyEmailValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D961B3F79D200633D61 /* EmptyEmailValidatorSpec.swift */; };
+		15C41D9E1B3F79E000633D61 /* EmailFormatValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D9A1B3F79E000633D61 /* EmailFormatValidator.swift */; };
+		15C41D9F1B3F79E000633D61 /* EmptyEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D9B1B3F79E000633D61 /* EmptyEmailValidator.swift */; };
+		15C41DA21B3F7A0900633D61 /* EmailValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DA11B3F7A0900633D61 /* EmailValidatorError.swift */; };
+		15C41DA31B3F7B0700633D61 /* EmailFormatValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D9A1B3F79E000633D61 /* EmailFormatValidator.swift */; };
+		15C41DA41B3F7B0A00633D61 /* EmptyEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41D9B1B3F79E000633D61 /* EmptyEmailValidator.swift */; };
+		15C41DA51B3F7B0E00633D61 /* EmailValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DA11B3F7A0900633D61 /* EmailValidatorError.swift */; };
+		15C41DAB1B405DF700633D61 /* PasswordLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */; };
+		15C41DAD1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DAC1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift */; };
+		15C41DAF1B405E3000633D61 /* PasswordValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */; };
+		15C41DB01B405F0E00633D61 /* PasswordLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */; };
+		15C41DB11B405F0E00633D61 /* PasswordValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */; };
+		15C41DB41B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */; };
+		15C41DB51B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */; };
+		15C41DBB1B40600100633D61 /* EmptyPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */; };
+		15C41DBD1B40600100633D61 /* PhoneNumberLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */; };
+		15C41DBF1B40602600633D61 /* PhoneNumberValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */; };
+		15C41DC01B40615B00633D61 /* EmptyPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */; };
+		15C41DC11B40615B00633D61 /* PhoneNumberLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */; };
+		15C41DC21B40615B00633D61 /* PhoneNumberValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */; };
+		15C41DC41B40647C00633D61 /* RegistrationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DC31B40647C00633D61 /* RegistrationValidator.swift */; };
+		15C41DC61B40648F00633D61 /* RegistrationValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DC51B40648F00633D61 /* RegistrationValidatorSpec.swift */; };
+		15C41DC71B4064C200633D61 /* RegistrationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DC31B40647C00633D61 /* RegistrationValidator.swift */; };
+		15C41DCD1B4066B000633D61 /* ValidatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DCC1B4066B000633D61 /* ValidatorsFactory.swift */; };
+		15C41DD11B4067BB00633D61 /* ValidatorsFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DD01B4067BB00633D61 /* ValidatorsFactorySpec.swift */; };
+		15C41DD21B4067C800633D61 /* ValidatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C41DCC1B4066B000633D61 /* ValidatorsFactory.swift */; };
 		15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */; };
+		A2729F25266787857F610733 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6AA74392870D2E05D8D3BC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +68,32 @@
 		150BC2481B3CCE320069FAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		150BC24E1B3CCE320069FAFE /* CompositeValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		150BC2531B3CCE320069FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		150BC2541B3CCE320069FAFE /* CompositeValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidationTests.swift; sourceTree = "<group>"; };
 		150BC25E1B3CD6AA0069FAFE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		15C41D8A1B3F763A00633D61 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		15C41D8D1B3F772800633D61 /* CompositeValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41D8F1B3F773400633D61 /* CompositeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
+		15C41D911B3F776900633D61 /* FakeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeValidator.swift; sourceTree = "<group>"; };
+		15C41D951B3F79D200633D61 /* EmailFormatValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormatValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41D961B3F79D200633D61 /* EmptyEmailValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyEmailValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41D9A1B3F79E000633D61 /* EmailFormatValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFormatValidator.swift; sourceTree = "<group>"; };
+		15C41D9B1B3F79E000633D61 /* EmptyEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyEmailValidator.swift; sourceTree = "<group>"; };
+		15C41DA11B3F7A0900633D61 /* EmailValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorError.swift; sourceTree = "<group>"; };
+		15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordLengthValidator.swift; sourceTree = "<group>"; };
+		15C41DAC1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordLengthValidatorSpec.swift; path = ../../../../../Desktop/ValidatorsTests/PasswordLengthValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorError.swift; sourceTree = "<group>"; };
+		15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPhoneNumberValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberLengthValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyPhoneNumberValidator.swift; sourceTree = "<group>"; };
+		15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberLengthValidator.swift; sourceTree = "<group>"; };
+		15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidatorError.swift; sourceTree = "<group>"; };
+		15C41DC31B40647C00633D61 /* RegistrationValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationValidator.swift; sourceTree = "<group>"; };
+		15C41DC51B40648F00633D61 /* RegistrationValidatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationValidatorSpec.swift; sourceTree = "<group>"; };
+		15C41DCC1B4066B000633D61 /* ValidatorsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorsFactory.swift; sourceTree = "<group>"; };
+		15C41DD01B4067BB00633D61 /* ValidatorsFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorsFactorySpec.swift; sourceTree = "<group>"; };
 		15E158271B3CE4E8008C68AB /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		635850C327DB8E1B1CF73FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7D6AA74392870D2E05D8D3BC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3859271EC7AA1D0307161B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,18 +108,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2729F25266787857F610733 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A506F4DE21A9D4724276F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D6AA74392870D2E05D8D3BC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		150BC2301B3CCE320069FAFE = {
 			isa = PBXGroup;
 			children = (
 				150BC23B1B3CCE320069FAFE /* CompositeValidation */,
 				150BC2511B3CCE320069FAFE /* CompositeValidationTests */,
 				150BC23A1B3CCE320069FAFE /* Products */,
+				C3B9A2BF17DF90AE046D2B57 /* Pods */,
+				0A506F4DE21A9D4724276F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +152,7 @@
 				150BC2421B3CCE320069FAFE /* Main.storyboard */,
 				150BC2451B3CCE320069FAFE /* Images.xcassets */,
 				150BC2471B3CCE320069FAFE /* LaunchScreen.xib */,
+				15C41D891B3F763A00633D61 /* Validators */,
 				150BC23C1B3CCE320069FAFE /* Supporting Files */,
 			);
 			path = CompositeValidation;
@@ -101,7 +169,7 @@
 		150BC2511B3CCE320069FAFE /* CompositeValidationTests */ = {
 			isa = PBXGroup;
 			children = (
-				150BC2541B3CCE320069FAFE /* CompositeValidationTests.swift */,
+				15C41D8C1B3F772800633D61 /* Validators */,
 				150BC2521B3CCE320069FAFE /* Supporting Files */,
 			);
 			path = CompositeValidationTests;
@@ -113,6 +181,74 @@
 				150BC2531B3CCE320069FAFE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15C41D891B3F763A00633D61 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				15C41D8A1B3F763A00633D61 /* Validator.swift */,
+				15C41DCC1B4066B000633D61 /* ValidatorsFactory.swift */,
+				15C41D8F1B3F773400633D61 /* CompositeValidator.swift */,
+				15C41DC31B40647C00633D61 /* RegistrationValidator.swift */,
+				15C41D991B3F79E000633D61 /* EmailValidator */,
+				15C41DA61B405DF700633D61 /* PasswordValidator */,
+				15C41DB61B40600100633D61 /* PhoneNumberValidator */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		15C41D8C1B3F772800633D61 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				15C41D8D1B3F772800633D61 /* CompositeValidatorSpec.swift */,
+				15C41D911B3F776900633D61 /* FakeValidator.swift */,
+				15C41D951B3F79D200633D61 /* EmailFormatValidatorSpec.swift */,
+				15C41D961B3F79D200633D61 /* EmptyEmailValidatorSpec.swift */,
+				15C41DAC1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift */,
+				15C41DB21B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift */,
+				15C41DB31B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift */,
+				15C41DC51B40648F00633D61 /* RegistrationValidatorSpec.swift */,
+				15C41DD01B4067BB00633D61 /* ValidatorsFactorySpec.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		15C41D991B3F79E000633D61 /* EmailValidator */ = {
+			isa = PBXGroup;
+			children = (
+				15C41D9A1B3F79E000633D61 /* EmailFormatValidator.swift */,
+				15C41D9B1B3F79E000633D61 /* EmptyEmailValidator.swift */,
+				15C41DA11B3F7A0900633D61 /* EmailValidatorError.swift */,
+			);
+			path = EmailValidator;
+			sourceTree = "<group>";
+		};
+		15C41DA61B405DF700633D61 /* PasswordValidator */ = {
+			isa = PBXGroup;
+			children = (
+				15C41DA91B405DF700633D61 /* PasswordLengthValidator.swift */,
+				15C41DAE1B405E3000633D61 /* PasswordValidatorError.swift */,
+			);
+			path = PasswordValidator;
+			sourceTree = "<group>";
+		};
+		15C41DB61B40600100633D61 /* PhoneNumberValidator */ = {
+			isa = PBXGroup;
+			children = (
+				15C41DB71B40600100633D61 /* EmptyPhoneNumberValidator.swift */,
+				15C41DBA1B40600100633D61 /* PhoneNumberLengthValidator.swift */,
+				15C41DBE1B40602600633D61 /* PhoneNumberValidatorError.swift */,
+			);
+			path = PhoneNumberValidator;
+			sourceTree = "<group>";
+		};
+		C3B9A2BF17DF90AE046D2B57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD3859271EC7AA1D0307161B /* Pods.debug.xcconfig */,
+				635850C327DB8E1B1CF73FBA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 150BC25B1B3CCE320069FAFE /* Build configuration list for PBXNativeTarget "CompositeValidationTests" */;
 			buildPhases = (
+				76F24687A3A5993DA071CB50 /* Check Pods Manifest.lock */,
 				150BC24A1B3CCE320069FAFE /* Sources */,
 				150BC24B1B3CCE320069FAFE /* Frameworks */,
 				150BC24C1B3CCE320069FAFE /* Resources */,
+				17429B91EB3590CACA85E4A7 /* Embed Pods Frameworks */,
+				F8A91790057F0419DA893D44 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +349,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17429B91EB3590CACA85E4A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76F24687A3A5993DA071CB50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A91790057F0419DA893D44 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		150BC2351B3CCE320069FAFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C41DBB1B40600100633D61 /* EmptyPhoneNumberValidator.swift in Sources */,
+				15C41D901B3F773400633D61 /* CompositeValidator.swift in Sources */,
+				15C41D8B1B3F763A00633D61 /* Validator.swift in Sources */,
+				15C41DC41B40647C00633D61 /* RegistrationValidator.swift in Sources */,
+				15C41DBF1B40602600633D61 /* PhoneNumberValidatorError.swift in Sources */,
 				15E158281B3CE4E8008C68AB /* RegistrationViewController.swift in Sources */,
+				15C41DA21B3F7A0900633D61 /* EmailValidatorError.swift in Sources */,
+				15C41DAF1B405E3000633D61 /* PasswordValidatorError.swift in Sources */,
+				15C41D9F1B3F79E000633D61 /* EmptyEmailValidator.swift in Sources */,
+				15C41DAB1B405DF700633D61 /* PasswordLengthValidator.swift in Sources */,
 				150BC23F1B3CCE320069FAFE /* AppDelegate.swift in Sources */,
+				15C41D9E1B3F79E000633D61 /* EmailFormatValidator.swift in Sources */,
+				15C41DBD1B40600100633D61 /* PhoneNumberLengthValidator.swift in Sources */,
 				150BC25F1B3CD6AA0069FAFE /* SettingsViewController.swift in Sources */,
+				15C41DCD1B4066B000633D61 /* ValidatorsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +424,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150BC2551B3CCE320069FAFE /* CompositeValidationTests.swift in Sources */,
+				15C41DAD1B405E0F00633D61 /* PasswordLengthValidatorSpec.swift in Sources */,
+				15C41DB51B405FEF00633D61 /* PhoneNumberLengthValidatorSpec.swift in Sources */,
+				15C41DB01B405F0E00633D61 /* PasswordLengthValidator.swift in Sources */,
+				15C41DB41B405FEF00633D61 /* EmptyPhoneNumberValidatorSpec.swift in Sources */,
+				15C41DB11B405F0E00633D61 /* PasswordValidatorError.swift in Sources */,
+				15C41DD21B4067C800633D61 /* ValidatorsFactory.swift in Sources */,
+				15C41DC71B4064C200633D61 /* RegistrationValidator.swift in Sources */,
+				15C41DC21B40615B00633D61 /* PhoneNumberValidatorError.swift in Sources */,
+				15C41D971B3F79D200633D61 /* EmailFormatValidatorSpec.swift in Sources */,
+				15C41DA41B3F7B0A00633D61 /* EmptyEmailValidator.swift in Sources */,
+				15C41DC61B40648F00633D61 /* RegistrationValidatorSpec.swift in Sources */,
+				15C41D941B3F778C00633D61 /* CompositeValidator.swift in Sources */,
+				15C41DC01B40615B00633D61 /* EmptyPhoneNumberValidator.swift in Sources */,
+				15C41D981B3F79D200633D61 /* EmptyEmailValidatorSpec.swift in Sources */,
+				15C41DA51B3F7B0E00633D61 /* EmailValidatorError.swift in Sources */,
+				15C41DA31B3F7B0700633D61 /* EmailFormatValidator.swift in Sources */,
+				15C41DC11B40615B00633D61 /* PhoneNumberLengthValidator.swift in Sources */,
+				15C41D8E1B3F772800633D61 /* CompositeValidatorSpec.swift in Sources */,
+				15C41D931B3F778900633D61 /* Validator.swift in Sources */,
+				15C41DD11B4067BB00633D61 /* ValidatorsFactorySpec.swift in Sources */,
+				15C41D921B3F776900633D61 /* FakeValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +581,7 @@
 		};
 		150BC25C1B3CCE320069FAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3859271EC7AA1D0307161B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -381,6 +601,7 @@
 		};
 		150BC25D1B3CCE320069FAFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635850C327DB8E1B1CF73FBA /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
